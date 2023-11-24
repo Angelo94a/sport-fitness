@@ -1,0 +1,80 @@
+---
+import Service from '../components/Service.astro'
+import Warning from '../icon/Warning.astro'
+import Layout from '../layouts/Layout.astro'
+---
+
+<Layout title="Sport fitness">
+	<main>
+		<section class="hero">
+			<p class="hero__text">
+				Bienvenidos, encuentra las mejores ofertas y rutinas para ti. <br /><br
+				/>
+
+				 Todo lo que necesitas para llevar a tu
+			</p>
+			<a href="/#" class="hero__link"
+				>Más información <div class="icon">
+					<Warning />
+				</div></a
+			>
+		</section>
+		<!-- oferta -->
+		<!-- destacados -->
+		<section class="destacados">
+			<header>
+				<h2>Programas destacados</h2>
+			</header>
+			<div class="destacados__container">
+				<Service />
+			</div>
+		</section>
+	</main>
+</Layout>
+
+<style>
+	.hero {
+		background-image: url('../../public/images/banner-mobile.png');
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		height: 70vh;
+		padding: 2rem 1.6rem;
+	}
+
+	.hero p {
+		color: white;
+		font-size: 1.6rem;
+		margin-bottom: 35rem;
+		text-wrap: pretty;
+	}
+
+	.hero a {
+		display: inline-flex;
+		gap: 1rem;
+		text-decoration: none;
+		align-items: center;
+		font-size: 1.6rem;
+		padding: 1rem;
+		border-radius: 2.5rem;
+		color: rgba(var(--black-light));
+		background-color: rgba(var(--yellow));
+	}
+	.hero a .icon {
+		display: inline-flex;
+		align-: center;
+		width: 2.2rem;
+	}
+	/* section destacados */
+	.destacados {
+		padding: 2rem 1.6rem;
+	}
+	.destacados header {
+		margin-bottom: 3rem;
+	}
+	.destacados__containe {
+		display: flex;
+		flex-direction: column;
+		gap: 1.2rem;
+	}
+</style>

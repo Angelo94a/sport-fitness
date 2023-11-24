@@ -1,0 +1,41 @@
+---
+import Sheck from '../icon/Sheck.astro'
+interface Props {
+	title: string
+	body: string
+}
+
+const { title, body } = Astro.props
+---
+
+<li class="card">
+	<article class="card__group">
+		<h2 class="card__title">{title}</h2>
+		<ul class="card__list">
+			<li>
+				<div class="card__icon">
+					<Sheck />
+				</div>
+				<p>{body}</p>
+			</li>
+			<li>
+				<div class="card__icon">
+					<Sheck />
+				</div>
+				<p>{body}</p>
+			</li>
+			<li>
+				<div class="card__icon">
+					<Sheck />
+				</div>
+				<p>{body}</p>
+			</li>
+		</ul>
+	</article>
+</li>
+
+<style>
+	.card__icon {
+		width: 2rem;
+	}
+</style>
